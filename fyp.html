@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="Assests/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="Assests/bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="Assests/bootstrap-5.1.3-examples/footers/footers.css">
+  <link rel="stylesheet" href="mySheet.css">
+  <script src="Assests/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Assests/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/44c771ee07.js" crossorigin="anonymous"></script>
+</head>
+
+<title>Lenovo</title>
+
+<body class="backImg">
+
+  <!--      Nevigation                  Nevigation                  Nevigation             -->
+  <nav class="navbar  navbar-expand-md navbar-dark fixed-top bg-dark txt">
+    <div class="container-fluid">
+      <a class="navbar-brand"> <img src="images/lenovoRed.png" alt="" width="75px"><label class="txtSlog">For those who
+          do</label><sup class="txtSlog" style="font-weight: bold;">TM</sup></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Navbar options                 Navbar options                        Navbar options -->
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="fyp.html"><i
+                class="fa-solid fa-house"></i>&nbsp;Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="fypContacts.html">&nbsp;&nbsp;&nbsp;<i
+                class="fa-solid fa-phone"></i>&nbsp;Contact us</a></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="fypSupport.html">
+              &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-screwdriver-wrench"></i>
+              &nbsp;Technical Support</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="feedback.html">&nbsp;&nbsp;&nbsp;
+              <i class="fa-regular fa-comment-dots"></i>&nbsp;Feedback</a>
+          </li>
+
+        </ul>
+
+        <!--      Search bar                  Search bar               Search bar         -->
+        <div class="search mt-3 col-3 " id="searchId">
+          <form class="d-flex">
+            <input class="form-control me-2" id="searchInp" type="search" placeholder="Search" aria-label="Search">
+            <button onclick="openTab()" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        &nbsp;&nbsp;
+
+        <!--     Sign in - Sign up               Sign in - Sign up         Sign in - Sign up      -->
+        <div class="mt-3  d-flex">
+          <span class="col-12">
+            <a href="fypSignin.html"><button type="submit" style="font-size: 13px; font-weight: bolder;"
+                class="btn btn-outline-info ">Sign
+                in</button>
+            </a>
+        </div>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <br><br><br><br>
+  <!--      Display - Images            Display - Images            Display - Images        -->
+  <div class="row mt-4 " id="id1">
+
+    <span class="col-5 ">
+      <div class="carousel-item active" style="float: left;">
+        <img src="images/tagline4.jpg" class="d-block w-100" alt="..." width="1170px" height="500px">
+      </div>
+
+    </span>
+
+    <span class="col-7 ">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="float: right;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/thinkStation.jpg" class="d-block w-100" alt="..." width="1170px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Think Station Series</h5>
+              <p>Raising the Bar on Performance</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Thinkpad.jpg" class="d-block w-100" alt="..." width="1170px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Think Pad Series</h5>
+              <p>Unleash the Powers with 30 Years of Reliability behind Thinkpad</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/lenovoYoga4.jpg" class="d-block w-100" alt="..." width="1170px" height="500px">
+            <div class="carousel-caption d-none d-md-block yoga">
+              <h5>Lenovo Yoga Series</h5>
+              <p>Strom into the Future of Art and Design</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/lenovoTab.jpg" class="d-block w-100" alt="..." width="1170px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="yoga2">Lenovo Tab Extreme</h5>
+              <p>Innovation Never Stands Still</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+    </span>
+
+  </div>
+
+
+  <!--     Grid System                 Grid System                 Grid System             -->
+  <br><br>
+  <div class="ques">
+    <p>Why Lenovo?</p>
+  </div>
+
+  <div class="mt-5 row messegeCl">
+    <div class="col-4 ">
+      <img src="images/vantage.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Complete control over PC and it's<br> BIOS through lenovo vantage </p>
+    </div>
+
+    <div class="col-4 ">
+      <img src="images/unique.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Its unique, slim and flexible designs makes it easy to handle and carry</p>
+    </div>
+
+    <div class="col-4 ">
+      <img src="images/chipset.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Hardware packing into a tiny, portable enclosure manages:
+        cooling and heating</p>
+    </div>
+
+    <br><br>
+
+    <div class="col-4 ">
+      <img src="images/ultimateGame.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Get unmatched power & performance with powerful chipset and high
+        resolution</p>
+    </div>
+
+    <div class="col-4 ">
+      <img src="images/uptodateTech.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Up to date technology helps you to stay a head of the curves and competitive </p>
+    </div>
+
+    <div class="col-4 ">
+      <img src="images/technical.jpg" alt="" class="rounded-circle whyLenovo">
+      <p class="gridTxt">Provides assistance and service in<br> case of any practical problems </p>
+    </div>
+  </div>
+
+
+  <!--      CEO - Message               CEO - Message               CEO - Message          -->
+  <div class="mt-5 rounded row messegeCl">
+
+    <span class="col-md-5 col-sm-12 ">
+      <label><img src="images/lenovoCeo.jpg" class="img-fluid float-end rounded-circle hei"></label>
+    </span>
+
+    <span class="col-sm-12  col-md-7 ">
+      <h5 class="messegeHead">CEO Message</h5>
+      <label class="messegeId">We have a strong history of navigating good times and tough times
+        with agility, flexibility and persistence. At Lenovo, we strive every day to bring smarter
+        technology to all. That stems from our belief that putting the best technology in the hands of
+        more people leads to better ideas and solutions to all of our challenges.
+        With this vision we will become one of the world's leading ICT companies, a pioneerand enabler
+        of intelligent transformation, and that we will use our technology to solve humanity's greatest
+        challenges.
+      </label>
+    </span>
+
+  </div>
+
+  <br><br><br>
+
+  <!-- Footer                    Footer                                     Footer -->
+  <div style="background-color: black; color: white;">
+
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+      <footer class="py-3">
+        <div class="row">
+          <div class="col-2">
+            <h5>Account/ Reviews</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="viewacc.php" class="nav-link p-0">Account Details</a>
+                </li>
+                <li class="nav-item mb-2"><a href="update.php" class="nav-link p-0">Update Account</a></li>
+                <li class="nav-item mb-2"><a href="delacc.php" class="nav-link p-0">Delete Account</a></li>
+                <li class="nav-item mb-2"><a href="viewfeedback.php" class="nav-link p-0">View Feedback</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Forms</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="feedback.html" class="nav-link p-0">Product Feedback</a></li>
+              <li class="nav-item mb-2"><a href="fypSignin.html" class="nav-link p-0">Log in</a></li>
+              <li class="nav-item mb-2"><a href="fypSignup.html" class="nav-link p-0">Sign up</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="window.html" class="nav-link p-0 ">Window</a></li>
+              <li class="nav-item mb-2"><a href="driver.html" class="nav-link p-0 ">Driver</a></li>
+              <li class="nav-item mb-2"><a href="vantage.html" class="nav-link p-0 ">Vantage</a></li>
+              <li class="nav-item mb-2"><a href="bios.html" class="nav-link p-0 ">BIOS</a></li>
+            </ul>
+          </div>
+
+
+          <!-- Subscription          Subscription            Subscription       -->
+          <div class="col-4 offset-1">
+            <h5>Get our newsletter for free...</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2 ">
+              <label for="newsletter1" style="font-size: 17px;">Become community member >>></label>
+              <a href="fypSignup.html"><button type="submit" class="btn btn-danger ">Register</button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lenovo Symbol - Social Media              Lenovo Symbol - Social Media -->
+        <div class="d-flex justify-content-between  my-1 border-top">
+          <p><img src="images/lenovoRed.png" alt="" width="105px"><i><br><b>"We DO what we say & we own what
+                we DO"</b></i></p>
+
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" target="_blank" href="https://linkedin.com/company/lenovo"><svg
+                  class="bi" width="24" height="24">
+                </svg><i class="my-5 reg fa-brands fa-linkedin-in fa-xl"></i></a></li>
+
+            <li class="ms-3"><a class="link-dark" target="_blank" href="https://twitter.com/lenovo_ME"><svg class="bi"
+                  width="24" height="24">
+                </svg><i class="my-5 reg fa-brands fa-x-twitter fa-xl"></i></i></a></li>
+
+            <li class="ms-3"><a class="link-dark" target="_blank" href="https://www.instagram.com/lenovo_me"><svg
+                  class="bi" width="24" height="24">
+                </svg><i class="my-5 reg fa-brands fa-instagram fa-xl"></i></a></li>
+
+            <li class="ms-3"><a class="link-dark" target="_blank" href="https://www.facebook.com/LenovoMiddleEast"><svg
+                  class="bi" width="24" height="24">
+                </svg><i class="my-5 reg fa-brands fa-facebook fa-xl"></i></a></li>
+          </ul>
+        </div>
+
+      </footer>
+    </div>
+
+  </div>
+
+
+  <script src="Assests/JQuery3.7.0/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="search.js"></script>
+
+</body>
+
+
+</html>

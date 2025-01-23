@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Assests/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mySheet.css">
+    <link rel="stylesheet" href="Assests/bootstrap-5.1.3-examples/footers/footers.css">
+    <link rel="stylesheet" href="Assests/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="Assests/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assests/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/44c771ee07.js" crossorigin="anonymous"></script>
+</head>
+<!-- <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style> -->
+
+<body class="backImg">
+
+    <div style="background-color: black; color: white;">
+
+        <div class="b-example-divider"></div>
+
+        <div class="container">
+            <footer class="py-3">
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Home</h5>
+                        <ul class="nav flex-column ">
+                            <li class="nav-item mb-2"><a href="fyp.html" class="nav-link p-0 ">Home page</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Forms</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="feedback.html" class="nav-link p-0">Product Feedback</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="fypSignin.html" class="nav-link p-0">Log in</a></li>
+                            <li class="nav-item mb-2"><a href="fypSignup.html" class="nav-link p-0">Sign up</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Support</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="window.html" class="nav-link p-0 ">Window</a></li>
+                            <li class="nav-item mb-2"><a href="driver.html" class="nav-link p-0 ">Driver</a></li>
+                            <li class="nav-item mb-2"><a href="vantage.html" class="nav-link p-0 ">Vantage</a></li>
+                            <li class="nav-item mb-2"><a href="bios.html" class="nav-link p-0 ">BIOS</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscription          Subscription            Subscription       -->
+                    <div class="col-4 offset-1">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2 ">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" style="font-weight: bold;" type="text" class="form-control "
+                                    placeholder="Email address" required>
+                                <button class="btn btn-danger " type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Lenovo Symbol - Social Media              Lenovo Symbol - Social Media -->
+                <div class="d-flex justify-content-between  my-1 border-top">
+                    <p><img src="images/lenovoRed.png" alt="" width="105px"><i><br><b>"We DO what we say & we own what
+                                we DO"</b></i></p>
+
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" target="_blank"
+                                href="https://linkedin.com/company/lenovo"><svg class="bi" width="24" height="24">
+                                </svg><i class="my-5 reg fa-brands fa-linkedin-in fa-xl"></i></a></li>
+
+                        <li class="ms-3"><a class="link-dark" target="_blank" href="https://twitter.com/lenovo_ME"><svg
+                                    class="bi" width="24" height="24">
+                                </svg><i class="my-5 reg fa-brands fa-x-twitter fa-xl"></i></i></a></li>
+
+                        <li class="ms-3"><a class="link-dark" target="_blank"
+                                href="https://www.instagram.com/lenovo_me"><svg class="bi" width="24" height="24">
+                                </svg><i class="my-5 reg fa-brands fa-instagram fa-xl"></i></a></li>
+
+                        <li class="ms-3"><a class="link-dark" target="_blank"
+                                href="https://www.facebook.com/LenovoMiddleEast"><svg class="bi" width="24" height="24">
+                                </svg><i class="my-5 reg fa-brands fa-facebook fa-xl"></i></a></li>
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+
+
+
+
+    else {
+
+        $query = "SELECT * FROM `signin` WHERE email = '$email' ";
+
+        // FETCHING DATA FROM DATABASE
+        $result = $connect->query($query);
+
+        if ($result->num_rows > 0) {
+
+            // Print the table header once
+            echo "<table class='feedback-table'>" .
+                "<thead>" .
+                "<tr>" .
+                "<th> Name </th>" .
+                "<th> Email </th>" .
+                "<th> Product </th>" .
+                "<th> Purchased </th>" .
+                "<th> Experience </th>" .
+                "<th> Found required thing </th>" .
+                "<th> Innovative </th>" .
+                "</tr>" .
+                "</thead>" .
+                "<tbody>";
+
+            // while loop to select every feedback given
+            while ($row = $result->fetch_assoc()) {
+                $first = $row["firstName"];
+                $last = $row["lastName"];
+                $father = $row["fatherName"];
+                $contact = $row["contact"];
+                $dbemail = $row["email"];
+                $dbpass = $row["password"];
+                $gender = $row["gender"];
+
+                // Print table rows
+                echo "<tr>" .
+                    "<td>" . $first . "</td>" .
+                    "<td>" . $last . "</td>" .
+                    "<td>" . $father . "</td>" .
+                    "<td>" . $contact . "</td>" .
+                    "<td>" . $dbemail . "</td>" .
+                    "<td>" . $dbpass . "</td>" .
+                    "<td>" . $gender . "</td>" .
+                    "</tr>";
+
+            }
+
+            // Close the table
+            echo "</tbody></table>";
+        }
+    }
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

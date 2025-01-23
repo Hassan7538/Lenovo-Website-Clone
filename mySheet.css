@@ -1,0 +1,282 @@
+.txt {
+    font-size: 14px !important;
+}
+
+.txtSlog {
+    font-size: 10px !important;
+}
+
+.reg {
+    color: white !important;
+}
+
+a:hover {
+    color: white;
+}
+
+.yoga {
+    background-color: rgba(0, 0, 0, 0.251);
+    color: white;
+}
+
+.yoga2 {
+    background-color: rgba(0, 0, 0, 0.098);
+    color: white;
+}
+
+.backImg {
+    background-image: url("images/seaarch.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btnHover:hover {
+    background: black;
+    color: white;
+}
+
+.messegeCl {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 30px 50px 5px 20px;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.096) !important;
+}
+
+.containerGr {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centerGr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#id1 {
+    background-image: url("images/laptopBackground3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-right: 0%;
+}
+
+.whyLenovo {
+    height: 200px;
+    width: 300px;
+}
+
+.ques {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+}
+
+.gridTxt {
+    color: white;
+    font-size: 20px;
+}
+
+.hei {
+    height: 240px !important;
+    width: 400px !important;
+}
+
+.messegeId {
+    color: white;
+    font: 30px !important;
+    padding-top: 20px;
+}
+
+.messegeHead {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.techBody {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.supImg {
+    height: 300px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid white;
+}
+
+.supImgHover:hover {
+    padding: 30px;
+    transition: transform .2s;
+    transform: scale(1.35);
+    margin: 0 auto;
+    border: none;
+}
+
+/* Container holding the image and the text */
+.containerTest {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centeredTest {
+    /* background-color: rgba(0, 0, 0, 0.187) !important;  */
+    font-weight: bolder;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: white;
+}
+
+.centeredTest2 {
+    background-color: rgba(0, 0, 0, 0.187) !important;
+    font-weight: bolder;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: white;
+}
+
+.vantage {
+    background-color: yellow;
+    color: blue;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.vantage a:hover {
+    color: red;
+}
+
+.vantage a:active {
+    color: green;
+}
+
+.contact {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.signin {
+    margin: auto;
+    margin-top: 25px;
+    width: 70%;
+    padding: 10px;
+}
+
+.signInBack {
+    background-image: url("images/signin2.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 450px;
+}
+
+.signinHead {
+    font-weight: bolder;
+    margin-left: 245px !important;
+}
+
+.inpProp {
+    margin-left: 330px;
+    width: 10cm;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: yellow;
+    font-weight: bold;
+    background: transparent;
+}
+
+.notAcc {
+    color: yellow;
+}
+
+.notAcc a:hover {
+    color: aqua;
+}
+
+.notAcc a:active {
+    color: white;
+}
+
+.mainclForm {
+    background-color: rgba(0, 0, 0, 0.116);
+    color: gold;
+    text-align: left;
+    border: 4px solid yellow;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 13px;
+    margin: 70px 150px 50px 150px;
+}
+
+.h1clForm {
+    font-size: 50px;
+    color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.148);
+    text-align: center;
+}
+
+.starForm {
+    font-size: 22px;
+    color: aqua;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.txtForm {
+    font-size: 23px;
+}
+
+.buttonForm:hover {
+    color: black !important;
+    background-color: white !important;
+    font-weight: bold !important;
+}
+
+.ipForm {
+    font-size: 19px;
+    color: gold;
+}
+
+.inpPropForm {
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none !important;
+    color: yellow;
+    font-weight: bold;
+    background: transparent;
+}
+
+.inpProp2 {
+    width: 10cm;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: yellow;
+    font-weight: bold;
+    background: transparent;
+}
